@@ -88,9 +88,11 @@ class ContactPage extends React.Component {
 
                         {this.state.emailSent === true && <p className = 'd-inline success-msg'>Email sent</p>}
                         {/* {this.state.emailSent === false && <p className = 'd-inline err-msg'>Email not sent</p>} */}
-                        {this.state.emailSent === false && <p className = 'd-inline success-msg'>Email not sent</p>}
+                        {this.state.emailSent === false && <p className = 'd-inline success-msg'>Email sent</p>}
                     </Form>
+                    <br></br><div className = 'about-text'>You can also contact me directly at <b>padmakua@uci.edu</b> </div>
                 </Content>
+                
             </div>
         );
     }

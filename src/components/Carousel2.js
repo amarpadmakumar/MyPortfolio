@@ -8,8 +8,10 @@ import Card from '../components/Card'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'; 
+import Card2 from '../components/Card2'
 
-class Carousel extends React.Component {
+
+class Carousel2 extends React.Component {
 
     constructor(props) {
         super(props);
@@ -17,22 +19,6 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'LinkedIn',
-                    subTitle: 'Profile',
-                    imgSrc: amar,
-                    link: 'https://www.linkedin.com/in/amartyapadmakumar/',
-                    selected: false
-                },
-                {
-                    id: 1,
-                    title: 'GitHub',
-                    subTitle: 'GitHub Repository',
-                    imgSrc: github,
-                    link: 'https://github.com/amartyapadmakumar',
-                    selected: false
-                },
-                {
-                    id: 2,
                     title: 'Resume',
                     subTitle: 'Professional Resume',
                     imgSrc: resume,
@@ -64,7 +50,7 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} click = {() => this.handleCardClick(item.id)} key={item.id} />
+            return <Card2 item={item} click = {() => this.handleCardClick(item.id)} key={item.id} />
         })
     }
 
@@ -81,4 +67,4 @@ class Carousel extends React.Component {
 
 }
 
-export default Carousel;
+export default Carousel2;
